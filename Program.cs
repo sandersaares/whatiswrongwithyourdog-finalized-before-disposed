@@ -21,7 +21,7 @@ _ = Task.Run(async () =>
     {
         Console.WriteLine("Starting work");
         
-        //await foo.DoStuffAsync(CancellationToken.None);
+        await foo.DoStuffAsync(CancellationToken.None);
 
         // ALTERNATIVE: If I instead provide a CT from a fresh CTS, everything works OK.
         //using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
